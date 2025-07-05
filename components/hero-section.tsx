@@ -11,7 +11,6 @@ const roles = [
   "AI/ML Enthusiast",
   "Cloud & DevOps Learner",
   "Product-Oriented Engineer",
-  "Open Source Contributor",
   "Tech Explorer & Fast Learner",
   "System Design Thinker",
   "SaaS Platform Builder"
@@ -91,7 +90,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Passionate B.Tech student building innovative solutions with cutting-edge technology
+            Blending curiosity and code — a B.Tech student building the future through innovation and technology.
           </motion.p>
 
           <motion.div
@@ -110,14 +109,18 @@ export function HeroSection() {
                 View Resume
               </Button>
             </a>
-            <Button variant="outline" size="lg" className="group">
-              <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Contact Me
-            </Button>
-            <Button variant="ghost" size="lg" className="group">
-              <Github className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-              GitHub
-            </Button>
+            <a href="#contact">
+              <Button variant="outline" size="lg" className="group">
+                <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                Contact Me
+              </Button>
+            </a>
+            <a href="https://github.com/nehardh" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="lg" className="group">
+                <Github className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
+                GitHub
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
 

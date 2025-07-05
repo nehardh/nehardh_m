@@ -9,12 +9,12 @@ const experiences = [
   {
     company: "MetaSketch Pvt Ltd",
     role: "Full Stack Developer",
-    duration: "2024 - Present",
+    duration: "2024 (6 months)",
     location: "Remote",
     type: "Internship",
-    description: "Developing scalable web applications and contributing to SaaS product development. Working with modern tech stack including React, Node.js, and cloud services.",
+    description: "Developing scalable web applications and contributing to SaaS product development. Working with modern tech stack including React, Node.js, and Django.",
     achievements: [
-      "Built responsive web applications serving 1000+ users",
+      "Built responsive web applications serving 10+ users",
       "Implemented secure payment integration with Stripe",
       "Optimized database queries reducing load time by 40%"
     ],
@@ -23,28 +23,26 @@ const experiences = [
   {
     company: "Supraja Technologies",
     role: "Cybersecurity Intern",
-    duration: "2024",
+    duration: "2024 (4 months)",
     location: "Hybrid",
     type: "Internship", 
     description: "Focused on web security, penetration testing, and threat detection. Gained hands-on experience in identifying and mitigating security vulnerabilities.",
     achievements: [
-      "Conducted security audits for 10+ web applications",
-      "Identified and reported critical security vulnerabilities",
-      "Developed automated security testing scripts"
+      "Conducted security audits for 5+ web applications",
+      "Developed an application to block phishing websites"
     ],
     color: "from-red-500 to-pink-500"
   },
   {
     company: "NIELIT",
     role: "AI/ML Intern",
-    duration: "2023",
+    duration: "2023 (3 months)",
     location: "On-site",
     type: "Training Program",
     description: "Intensive training program focusing on machine learning algorithms, data analysis, and AI model development. Worked on real-world projects and research.",
     achievements: [
-      "Developed ML models with 95% accuracy",
-      "Completed 3 research projects on computer vision",
-      "Presented findings to industry professionals"
+      "Developed ML models with 90% accuracy",
+      "Completed 1 research projects on computer vision"
     ],
     color: "from-green-500 to-emerald-500"
   }

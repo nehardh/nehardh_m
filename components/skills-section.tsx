@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     title: "Databases & Cloud",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "Vercel", "Drizzle ORM"],
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "Vercel", "Drizzle ORM"],
     color: "from-orange-500 to-red-500"
   },
   {
@@ -32,7 +32,7 @@ const skillCategories = [
   },
   {
     title: "Developer Tools & Platforms",
-    skills: ["Git", "GitHub", "Docker", "JIRA", "Agile Methodology", "Notion", "Clerk Auth"],
+    skills: ["Git", "GitHub", "JIRA", "Agile Methodology", "Notion", "Clerk Auth"],
     color: "from-indigo-500 to-blue-500"
   },
   {
@@ -42,7 +42,7 @@ const skillCategories = [
   },
   {
     title: "Programming Languages",
-    skills: ["Java", "Python", "JavaScript", "C", "SQL"],
+    skills: ["Java", "Python", "C", "SQL"],
     color: "from-sky-500 to-indigo-500"
   },
   {

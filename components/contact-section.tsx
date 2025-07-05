@@ -12,13 +12,13 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "nehardh.madapuri@email.com",
+    value: "nehardh.m@gmail.com",
     color: "text-blue-500"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 90145 20948",
+    value: "+91 901XX XXX48",
     color: "text-green-500"
   },
   {
@@ -158,41 +158,20 @@ export function ContactSection() {
                 <CardTitle>Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <Input
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      name="email"
-                      type="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Textarea
-                      name="message"
-                      placeholder="Your Message"
-                      rows={6}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
-                  <Button type="submit" className="w-full group">
-                    <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                    Send Message
-                  </Button>
-                </form>
+              <form
+                action="https://formspree.io/f/mvgrnkjo"
+                method="POST"
+                className="space-y-4"
+              >
+                <Input name="name" placeholder="Your Name" required />
+                <Input name="email" type="email" placeholder="Your Email" required />
+                <Textarea name="message" placeholder="Your Message" rows={6} required />
+                <Button type="submit" className="w-full group">
+                  <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                  Send Message
+                </Button>
+              </form>
+
               </CardContent>
             </Card>
           </motion.div>

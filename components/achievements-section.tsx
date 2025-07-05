@@ -37,6 +37,11 @@ const achievements = [
         title: "NIELIT AI/ML Certification",
         description: "Machine learning and artificial intelligence",
         year: "2023"
+      },
+      {
+        title: "AWS Cloud Essentials",
+        description: "AWS Cloud Essentials Certification",
+        year: "2024"
       }
     ]
   },
@@ -54,6 +59,11 @@ const achievements = [
         title: "District Badminton Tournament",
         description: "Silver medal in district level competition",
         year: "2018"
+      },
+      {
+        title: "Intercollege Badminton Tournament",
+        description: "Gold medal in intercollege badminton tournament, representing my college",
+        year: "2023"
       }
     ]
   }

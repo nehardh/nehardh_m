@@ -45,13 +45,10 @@ export function AboutSection() {
           >
             <h3 className="text-2xl font-semibold mb-4">Hello! I'm Nehardh</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Driven B.Tech student with real-world project experience in SaaS, AI, and secure web development. 
-              Strong believer in innovation and continuous learning.
+              I'm a final-year B.Tech student with a strong passion for building things that work at scale—whether it's a SaaS product, an AI-powered tool, or a secure web platform. I enjoy turning complex ideas into practical, real-world applications and constantly look for ways to improve both the systems I build and the skills I bring to the table. I'm curious by nature, love working with new technologies, and stay committed to learning and growing as a developer every step of the way.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm passionate about creating robust, scalable solutions that make a difference. Whether it's 
-              building full-stack applications, exploring cybersecurity challenges, or implementing AI/ML models, 
-              I love turning complex problems into elegant code.
+              I'm passionate about building robust, scalable solutions that genuinely make a difference. Whether it's developing full-stack applications, tackling cybersecurity challenges, or implementing AI/ML models, I enjoy turning complex problems into clean, efficient, and elegant code.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">

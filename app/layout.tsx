@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Nehardh Madapuri - Full Stack Developer & Cybersecurity Enthusiast',
-  description: 'Portfolio of Nehardh Madapuri - B.Tech student specializing in Full Stack Development, Cybersecurity, and AI/ML. Explore my projects, experience, and achievements.',
+  description: 'Portfolio of Nehardh Madapuri',
   keywords: 'Nehardh Madapuri, Full Stack Developer, Cybersecurity, AI/ML, React, Next.js, Portfolio',
   authors: [{ name: 'Nehardh Madapuri' }],
   openGraph: {

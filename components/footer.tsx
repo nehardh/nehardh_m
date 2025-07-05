@@ -8,13 +8,13 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    url: "#",
+    url: "https://github.com/nehardh",
     color: "hover:text-gray-900 dark:hover:text-white"
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    url: "#",
+    url: "https://www.linkedin.com/in/nehardh-madapuri-3b7a0b255/",
     color: "hover:text-blue-600"
   },
   {
@@ -26,7 +26,7 @@ const socialLinks = [
   {
     icon: FileText,
     label: "Resume",
-    url: "#",
+    url: "https://drive.google.com/file/d/1CrHN2QGZ8A_c38PkGPyBLmbhZ1PL6vzz/view?usp=sharing",
     color: "hover:text-purple-600"
   }
 ];
@@ -101,7 +101,7 @@ export function Footer() {
               Contact
             </a>
             <span>•</span>
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="https://drive.google.com/file/d/1CrHN2QGZ8A_c38PkGPyBLmbhZ1PL6vzz/view?usp=sharing" target="_blank" className="hover:text-primary transition-colors">
               Resume
             </a>
           </div>
@@ -109,9 +109,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground flex items-center justify-center">
-              © {currentYear} Nehardh Madapuri. Made with{' '}
-              <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />{' '}
-              and lots of coffee ☕
+              © {currentYear} Nehardh Madapuri.
             </p>
           </div>
         </motion.div>

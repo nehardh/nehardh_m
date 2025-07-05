@@ -43,7 +43,7 @@ export function Header() {
       transition={{ duration: 0.8 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-sm' 
+          ? 'bg-background/50 backdrop-blur-md border-b border-border shadow-sm' 
           : 'bg-transparent'
       }`}
     >
@@ -52,7 +52,7 @@ export function Header() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="font-bold text-xl bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent"
+            className="font-bold text-2xl bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent"
           >
             NM
           </motion.div>
@@ -94,7 +94,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-md border-t border-border"
+            className="md:hidden bg-background/30 backdrop-blur-md border-t border-border"
           >
             <nav className="py-4 space-y-2">
               {navigation.map((item) => (

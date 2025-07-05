@@ -18,18 +18,18 @@ const projects = [
     color: "from-purple-500 to-pink-500"
   },
   {
-    title: "MERN Notes App",
-    description: "Full-stack notes application with real-time collaboration, rich text editing, and secure user authentication. Built for productivity and team collaboration.",
+    title: "Notes App",
+    description: "A no-login, instant-access productivity tool with sticky notes, to-do lists, a calendar, whiteboard, and a progress tracker. Built for speed, it features a clean, responsive UI with drag-and-drop and dark mode support.",
     icon: Database,
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
-    features: ["Real-time collaboration", "Rich text editor", "Secure authentication"],
+    tech: ["React", "Next.js", "Tailwind CSS"],
+    features: ["Sticky notes & whiteboard", "To-do list & calendar", "Dark mode"],
     githubUrl: "https://github.com/nehardh/my-notes.git",
-    liveUrl: "#",
+    liveUrl: "https://project-notes-app-bolt.vercel.app/",
     color: "from-green-500 to-emerald-500"
   },
   {
     title: "Django CRM System",
-    description: "Comprehensive Customer Relationship Management system with advanced analytics, automated workflows, and integrated communication tools.",
+    description: "A robust Customer Relationship Management (CRM) system built with Django-python, designed to streamline client interactions, track leads, and manage sales pipelines. It ensures data consistency, secure access control.",
     icon: Shield,
     tech: ["Django", "Python", "PostgreSQL", "Redis", "Celery"],
     features: ["Advanced analytics", "Automated workflows", "Team collaboration"],
@@ -38,6 +38,7 @@ const projects = [
     color: "from-blue-500 to-cyan-500"
   }
 ];
+
 
 export function ProjectsSection() {
   return (
@@ -53,11 +54,11 @@ export function ProjectsSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Showcasing innovative solutions built with modern technologies
+            Showcasing cool projects built with modern technologies
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
@@ -74,18 +75,24 @@ export function ProjectsSection() {
                   <CardHeader className="pb-4">
                     <div className="flex items-center justify-between mb-4">
                       <div className={`p-3 rounded-lg bg-gradient-to-r ${project.color} shadow-lg`}>
-                        <IconComponent className="w-6 h-6 text-white" />
+                        <IconComponent className="w-6 h-6 text-white" aria-label="Project Icon" />
                       </div>
                       <div className="flex space-x-2">
-                        <Button size="sm" variant="ghost" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                          <Github className="w-4 h-4" />
-                        </Button>
-                        <Button size="sm" variant="ghost" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                          <ExternalLink className="w-4 h-4" />
-                        </Button>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Button size="sm" variant="ghost" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                            <Github className="w-4 h-4" aria-label="GitHub repository" />
+                          </Button>
+                        </a>
+                        {project.liveUrl !== "#" && (
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <Button size="sm" variant="ghost" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                              <ExternalLink className="w-4 h-4" aria-label="Live site" />
+                            </Button>
+                          </a>
+                        )}
                       </div>
                     </div>
-                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors duration-200">
                       {project.title}
                     </CardTitle>
                   </CardHeader>
@@ -93,7 +100,6 @@ export function ProjectsSection() {
                     <p className="text-muted-foreground leading-relaxed">
                       {project.description}
                     </p>
-                    
                     <div className="space-y-3">
                       <div>
                         <h4 className="text-sm font-medium mb-2">Key Features:</h4>
@@ -106,10 +112,14 @@ export function ProjectsSection() {
                           ))}
                         </ul>
                       </div>
-                      
+
                       <div className="flex flex-wrap gap-2">
                         {project.tech.map((tech, idx) => (
-                          <Badge key={idx} variant="outline" className="text-xs">
+                          <Badge
+                            key={idx}
+                            variant="outline"
+                            className="text-xs hover:scale-105 transition-transform duration-150"
+                          >
                             {tech}
                           </Badge>
                         ))}
