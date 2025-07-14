@@ -8,7 +8,7 @@ import { ExternalLink, Github, Sparkles, Database, Shield } from 'lucide-react';
 
 const projects = [
   {
-    title: "AI Study Generator",
+    title: "SkillSure",
     description: "Intelligent study material generator using Gemini 2.0 API. Creates personalized study plans, flashcards, and practice questions based on learning objectives.",
     icon: Sparkles,
     tech: ["React", "Next.js", "Gemini API", "TypeScript", "Tailwind"],
@@ -18,7 +18,7 @@ const projects = [
     color: "from-purple-500 to-pink-500"
   },
   {
-    title: "Notes App",
+    title: "ZenTask",
     description: "A no-login, instant-access productivity tool with sticky notes, to-do lists, a calendar, whiteboard, and a progress tracker. Built for speed, it features a clean, responsive UI with drag-and-drop and dark mode support.",
     icon: Database,
     tech: ["React", "Next.js", "Tailwind CSS"],
@@ -28,7 +28,7 @@ const projects = [
     color: "from-green-500 to-emerald-500"
   },
   {
-    title: "Django CRM System",
+    title: "CRM - Django",
     description: "A robust Customer Relationship Management (CRM) system built with Django-python, designed to streamline client interactions, track leads, and manage sales pipelines. It ensures data consistency, secure access control.",
     icon: Shield,
     tech: ["Django", "Python", "PostgreSQL", "Redis", "Celery"],
